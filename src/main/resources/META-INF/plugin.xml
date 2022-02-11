@@ -1,0 +1,56 @@
+<idea-plugin>
+    <id>com.proofofconcept.highlightWithDiffPoC</id>
+    <name>Highlight with Diff PoC</name>
+    <vendor email="ronaldescobarj@gmail.com" url="">UCB</vendor>
+
+    <description>This proof of concept plugin will highlight the code in base to a csv with the diff between two files</description>
+
+    <!-- please see https://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+         on how to target different products -->
+    <depends>com.intellij.modules.platform</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <fileIconProvider implementation="fileexplorer.ChangesIconProvider"></fileIconProvider>
+<!--        <fileType name="Simple File" implementationClass="simplelanguage.SimpleFileType"-->
+<!--                  fieldName="INSTANCE" language="Simple" extensions="simple"/>-->
+        <fileType name="Java File" implementationClass="javalanguage.JavaFileType"
+                  fieldName="INSTANCE" language="Java" extensions="java"/>
+<!--        <lang.parserDefinition language="Simple" implementationClass="simplelanguage.SimpleParserDefinition"/>-->
+        <lang.parserDefinition language="Java" implementationClass="javalanguage.JavaParserDefinition"/>
+<!--        <lang.syntaxHighlighterFactory language="Simple" implementationClass="simplelanguage.SimpleSyntaxHighlighterFactory"/>-->
+        <lang.syntaxHighlighterFactory language="Java"
+                                       implementationClass="javalanguage.JavaSyntaxHighlighterFactory"/>
+        <editorFactoryListener implementation="editorevents.OnEditorOpen"/>
+<!--        <editorFactoryDocumentListener implementation="editorevents.OnDocument" />-->
+<!--        this extension point has events for document changes-->
+        <editorFactoryMouseListener implementation="editorevents.OnEditorMouse" />
+
+<!--        <fileDocumentManagerListener implementation="editorevents.OnFileDocumentChange" />-->
+<!--        <editorActionHandler action="" implementationClass=""-->
+<!--        <editorNotificationProvider implementation=""-->
+
+        <projectService serviceImplementation="services.GitService"/>
+        <projectService serviceImplementation="services.EditorService"/>
+        <projectService serviceImplementation="services.GlobalChangesService"/>
+    </extensions>
+    <applicationListeners>
+        <listener class="onopenproject.OnOpenProject"
+                  topic="com.intellij.openapi.project.ProjectManagerListener"/>
+<!--        <listener class="" topic="com.intellij.openapi.editor."-->
+    </applicationListeners>
+
+    <actions>
+        <!-- Add your actions here -->
+        <action id="menus.PopupDialogAction" class="menus.PopupDialogAction" text="My action"
+                description="My test action">
+            <override-text place="MainMenu" text="Pop Dialog Action"/>
+            <keyboard-shortcut first-keystroke="control alt A" second-keystroke="C" keymap="$default"/>
+            <mouse-shortcut keystroke="control button3 doubleClick" keymap="$default"/>
+            <add-to-group group-id="ToolsMenu" anchor="first"/>
+        </action>
+        <action id="menus.SelectCommitAction" class="menus.SelectCommitAction" text="Select source commit"
+                description="Select source commit for comparing">
+            <add-to-group group-id="ToolsMenu" anchor="first"/>
+        </action>
+    </actions>
+</idea-plugin>

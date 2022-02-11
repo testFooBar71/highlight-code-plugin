@@ -1,0 +1,22 @@
+{
+  parserClass="javalanguage.parser.JavaParser"
+
+  extends="com.intellij.extapi.psi.ASTWrapperPsiElement"
+
+  psiClassPrefix="Java"
+  psiImplClassSuffix="Impl"
+  psiPackage="javalanguage.psi"
+  psiImplPackage="javalanguage.psi.impl"
+
+  elementTypeHolderClass="javalanguage.psi.JavaTypes"
+  elementTypeClass="javalanguage.psi.JavaElementType"
+  tokenTypeClass="javalanguage.psi.JavaTokenType"
+}
+
+javaFile ::= item_*
+
+private item_ ::= (myline|COMMENT|CRLF)
+
+//property ::= (LLAVE? SEPARADOR VALOR?) | LLAVE
+//myline ::= NOTMODIFIED | INSERTED | UPDATED | UPDATEDMULTIPLETIMES | MOVED {methods=[getNotModified getInserted getUpdated getUpdatedMulitipleTimes getMoved]}
+myline ::= NOTMODIFIED | INSERTED | UPDATED | UPDATEDMULTIPLETIMES | MOVED
