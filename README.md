@@ -36,3 +36,7 @@ To install:
 ## Additional information
 
 An experiment has been conducted, testing the plugin with participants and comparing it to using Github to see the code changes. To evaluate the results, two tests have been performed: System Usability Scale (SUS) and NASA-TLX. The results of both tests can be seen [here](https://github.com/testFooBar71/highlight-code-plugin/tree/main/files/experimentResults).
+
+On the experiment, the participants reviewed two commits of open source repos: one using the plugin provided, and the other one using Github and an additional browser extension. The two commits are:
+- [Commit c1b847acdc8cb90a1498b236b3bb5c81ca75c044 from Apache Drill open source repository](https://github.com/apache/drill/commit/c1b847acdc8cb90a1498b236b3bb5c81ca75c044)
+- [Commit 03ade425dd5a65d3a713d5e7d85aa7605956fbd2 from Apache Giraph open source repository](https://github.com/apache/giraph/commit/03ade425dd5a65d3a713d5e7d85aa7605956fbd2)
