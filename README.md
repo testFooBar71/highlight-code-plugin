@@ -5,11 +5,11 @@ This plugin for IntelliJ IDEA highlights the code of a Java project based on the
 
 ![Screenshot](screenshot.png)
 
-You can find a more detailed documentation here.
+You can find a more detailed documentation [here](https://github.com/testFooBar71/highlight-code-plugin/blob/main/files/docs.pdf).
 
 ## Themes
 
-On the main branch, this plugin by default works for dark theme. It also works on light theme, but there are some issues with specific colors. The code working for light theme is on the branch light theme.
+On the main branch, this plugin by default works for dark theme. It also works on light theme, but there are some issues with specific colors. The code working for light theme is on the branch [light theme](https://github.com/testFooBar71/highlight-code-plugin/tree/light-theme).
 
 ## How to run
 
@@ -21,7 +21,7 @@ It is almost same procedure as for running, but instead of the "runIde" task, on
 
 ## How to install
 
-In case you don't want to manually build the plugin, you can download the dark theme and/or the light theme installer from here.
+In case you don't want to manually build the plugin, you can download the dark theme from [here](https://github.com/testFooBar71/highlight-code-plugin/raw/main/files/installerDarkTheme.zip) and/or the light theme from [here](https://github.com/testFooBar71/highlight-code-plugin/raw/main/files/installerLightTheme.zip).
 
 To install:
 
@@ -35,4 +35,4 @@ To install:
 
 ## Additional information
 
-An experiment has been conducted, testing the plugin with participants and comparing it to using Github to see the code changes. To evaluate the results, two tests have been performed: System Usability Scale (SUS) and NASA-TLX. The results of both tests are here.
+An experiment has been conducted, testing the plugin with participants and comparing it to using Github to see the code changes. To evaluate the results, two tests have been performed: System Usability Scale (SUS) and NASA-TLX. The results of both tests can be seen [here](https://github.com/testFooBar71/highlight-code-plugin/tree/main/files/experimentResults).
