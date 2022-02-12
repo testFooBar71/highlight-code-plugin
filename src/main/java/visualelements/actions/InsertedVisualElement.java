@@ -14,7 +14,7 @@ public class InsertedVisualElement extends VisualElement {
         this.setText("<html><b> INS </b></html>");
         this.setSize(30, 20);
         this.setOpaque(true);
-        this.setBackground(JBColor.BLUE);
-        this.setForeground(JBColor.WHITE);
+        this.setBackground(JBColor.getHSBColor((float)0.6,(float)0.6,(float)0.95));
+        this.setForeground(JBColor.BLACK);
     }
 }

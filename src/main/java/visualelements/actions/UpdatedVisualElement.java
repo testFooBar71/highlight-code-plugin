@@ -14,7 +14,7 @@ public class UpdatedVisualElement extends VisualElement {
         this.setText("<html><b> UPD </b></html>");
         this.setSize(35, 20);
         this.setOpaque(true);
-        this.setBackground(JBColor.GREEN);
-        this.setForeground(JBColor.WHITE);
+        this.setBackground(JBColor.getHSBColor((float)0.3, (float)0.6, (float)0.78));
+        this.setForeground(JBColor.BLACK);
     }
 }

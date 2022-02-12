@@ -14,7 +14,7 @@ public class DeletedVisualElement extends VisualElement {
         this.setText("<html><b> DEL </b></html>");
         this.setSize(30, 20);
         this.setOpaque(true);
-        this.setBackground(JBColor.RED);
-        this.setForeground(JBColor.WHITE);
+        this.setBackground(JBColor.getHSBColor(0, (float)0.65, 1));
+        this.setForeground(JBColor.BLACK);
     }
 }

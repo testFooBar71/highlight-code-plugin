@@ -12,7 +12,7 @@ public class ChangesSummaryVisualElement extends VisualElement {
         this.setText("<html><b> SUMMARY </b></html>");
         this.setSize(150, 20);
         this.setOpaque(true);
-        this.setBackground(JBColor.GRAY);
-        this.setForeground(JBColor.WHITE);
+        this.setBackground(JBColor.getHSBColor(0, 0, (float)0.82));
+        this.setForeground(JBColor.BLACK);
     }
 }

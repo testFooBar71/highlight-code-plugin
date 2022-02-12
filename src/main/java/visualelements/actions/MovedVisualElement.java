@@ -14,7 +14,7 @@ public class MovedVisualElement extends VisualElement {
         this.setText("<html><b> MOV </b></html>");
         this.setSize(35, 20);
         this.setOpaque(true);
-        this.setBackground(JBColor.ORANGE);
-        this.setForeground(JBColor.WHITE);
+        this.setBackground(JBColor.getHSBColor((float)0.09, (float)0.66, 1));
+        this.setForeground(JBColor.BLACK);
     }
 }
