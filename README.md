@@ -40,5 +40,3 @@ An experiment has been conducted, testing the plugin with participants and compa
 On the experiment, the participants reviewed two commits of open source repos: one using the plugin provided, and the other one using Github and an additional browser extension. The two commits are:
 - [Commit c1b847acdc8cb90a1498b236b3bb5c81ca75c044 from Apache Drill open source repository](https://github.com/apache/drill/commit/c1b847acdc8cb90a1498b236b3bb5c81ca75c044)
 - [Commit 03ade425dd5a65d3a713d5e7d85aa7605956fbd2 from Apache Giraph open source repository](https://github.com/apache/giraph/commit/03ade425dd5a65d3a713d5e7d85aa7605956fbd2)
-
-Prior to the main experiment, a pilot experiment has been conducted, reviewing only one commit using only the plugin. The commit is [this one](https://github.com/apache/commons-io/commit/4a514d3306b55b3667d1449ebd4cbe5f19dd7af0) from Apache Commons IO open source repository.
